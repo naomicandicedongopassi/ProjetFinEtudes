@@ -1,9 +1,8 @@
 # Projet fin d'études
-Requete finale sculptures 100%
+Requête finale sculptures 100%
 
 
-
-```json
+```sparql
 SELECT ?CollectionLabel (COUNT(?item) AS ?count)
 WHERE
 {
@@ -20,15 +19,14 @@ bd:serviceParam wikibase:language "fr,en"}
 GROUP BY ?CollectionLabel
 ORDER BY DESC (?count)
 ```
+
 ********************
 <iframe style="width: 80vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#SELECT%20%3FCollectionLabel%20%28COUNT%28%3Fitem%29%20AS%20%3Fcount%29%0AWHERE%0A%7B%0A%20%3Fitem%20wdt%3AP31%2Fwdt%3AP279%2a%20wd%3AQ860861.%0A%20%3Fitem%20wdt%3AP195%20%3FCollection.%0A%20%3FCollection%20wdt%3AP17%20wd%3AQ142.%20%20%0AOPTIONAL%20%7B%0A%20%3Fitem%20wdt%3AP18%20%3Fpic%20.%0A%7D%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20%0Abd%3AserviceParam%20wikibase%3Alanguage%20%22fr%2Cen%22%7D%0A%20%20%20%20%0A%7D%0AGROUP%20BY%20%3FCollectionLabel%0AORDER%20BY%20DESC%20%28%3Fcount%29%20%0A%0A%0A" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
 ******************
-Requete finale sculptures 10%
 
+Requête finale sculptures 10%
 
-
-
-```json
+```sparql
 SELECT ?CollectionLabel (COUNT(?item) AS ?count)
 WHERE
 {
@@ -44,16 +42,16 @@ bd:serviceParam wikibase:language "fr,en"}
 }
 GROUP BY ?CollectionLabel
 ORDER BY DESC (?count)
-
-
 
 LIMIT 20
 ```
 *****************
 <iframe style="width: 80vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3ABarChart%0ASELECT%20%3FCollectionLabel%20%28COUNT%28%3Fitem%29%20AS%20%3Fcount%29%0AWHERE%0A%7B%0A%20%3Fitem%20wdt%3AP31%2Fwdt%3AP279%2a%20wd%3AQ860861.%0A%20%3Fitem%20wdt%3AP195%20%3FCollection.%0A%20%3FCollection%20wdt%3AP17%20wd%3AQ142.%20%20%0AOPTIONAL%20%7B%0A%20%3Fitem%20wdt%3AP18%20%3Fpic%20.%0A%7D%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20%0Abd%3AserviceParam%20wikibase%3Alanguage%20%22fr%2Cen%22%7D%0A%20%20%20%20%0A%7D%0AGROUP%20BY%20%3FCollectionLabel%0AORDER%20BY%20DESC%20%28%3Fcount%29%20%0Alimit%2020%0A%0A" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
 ********************
-peiture 100%
-```json
+
+Requête finale peinture 100%
+
+```sparql
 SELECT ?CollectionLabel (COUNT(?item) AS ?count)
 WHERE
 {
@@ -76,8 +74,9 @@ ORDER BY DESC (?count)
 
 
 **************
-peinture 10%
-```json
+Requête finale peinture 10%
+
+```sparql 
 SELECT ?CollectionLabel (COUNT(?item) AS ?count)
 WHERE
 {
@@ -93,7 +92,7 @@ bd:serviceParam wikibase:language "fr,en"}
 }
 GROUP BY ?CollectionLabel
 ORDER BY DESC (?count)
-limit 20
+LIMIT 20
 ```
 ********************
 <iframe style="width: 80vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3ABarChart%0ASELECT%20%3FCollectionLabel%20%28COUNT%28%3Fitem%29%20AS%20%3Fcount%29%0AWHERE%0A%7B%0A%20%3Fitem%20wdt%3AP31%2Fwdt%3AP279%2a%20wd%3AQ860861.%0A%20%3Fitem%20wdt%3AP195%20%3FCollection.%0A%20%3FCollection%20wdt%3AP17%20wd%3AQ142.%20%20%0AOPTIONAL%20%7B%0A%20%3Fitem%20wdt%3AP18%20%3Fpic%20.%0A%7D%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20%0Abd%3AserviceParam%20wikibase%3Alanguage%20%22fr%2Cen%22%7D%0A%20%20%20%20%0A%7D%0AGROUP%20BY%20%3FCollectionLabel%0AORDER%20BY%20DESC%20%28%3Fcount%29%20%0Alimit%2020%0A%0A" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
