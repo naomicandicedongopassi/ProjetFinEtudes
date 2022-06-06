@@ -56,4 +56,4 @@ LIMIT 20
 
 
 
-[Page suivante](RequetesPeintures.md) 
+[Aller vers les requêtes finales concernant les collections de type "Peintures"](RequetesPeintures.md) 
