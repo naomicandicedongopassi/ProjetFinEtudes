@@ -1,4 +1,8 @@
+# Projet de fin d'études
+
+
 > 2) Les requêtes finales pour le nombre d’items partagés par les musées français de type “Peintures” sur Wikidata 
+
 
 La première requête va permettre d’afficher le nombre d’items de type “Peintures” partagés par quelques musées en France. Le résultat est affiché sous la forme d’une liste des musées.  
 
