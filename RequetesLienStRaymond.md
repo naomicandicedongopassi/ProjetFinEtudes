@@ -4,7 +4,8 @@
 
 
 ```sparql
-SELECT DISTINCT ?item ?itemLabel ?itemDescription ?collection ?articleFR  WHERE {
+SELECT DISTINCT ?item ?itemLabel ?itemDescription ?collection ?articleFR  
+WHERE {
    ?item wdt:P31/wdt:P279* wd:Q860861 ; #sculpture
    wdt:P195/wdt:P361* ?collection . # qui font partie de musées et de tous ses départements si existant
 
@@ -21,7 +22,8 @@ SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE]" }
 ********************************************************************
 
 ```sparql
-SELECT DISTINCT ?item ?itemLabel ?itemDescription ?collection ?articleFR  WHERE {
+SELECT DISTINCT ?item ?itemLabel ?itemDescription ?collection ?articleFR  
+WHERE {
     ?item wdt:P31/wdt:P279* wd:Q3305213 ; # peinture et sous-classe de peinture
     wdt:P195/wdt:P361* ?collection . # qui font partie de musées et de tous ses départements si existant
 
