@@ -1,8 +1,8 @@
 # Projet de fin d'études 
 
-  > d. *Paris Musées[^1]* 
+  > d. Paris Musées
 
-La première requête va permettre d’afficher les collections d'œuvres exposées par Paris Musées, sous la forme d’items de type “Sculptures”, ayant leur propre page Wikipédia. Le résultat est affiché sous la forme d’une liste des œuvres. Actuellement, 19 objets disposent d’un lien Wikipédia. 
+La première requête va permettre d’afficher les collections d'œuvres exposées par Paris Musées[^1], sous la forme d’items de type “Sculptures”, ayant leur propre page Wikipédia. Le résultat est affiché sous la forme d’une liste des œuvres. Actuellement, 19 objets disposent d’un lien Wikipédia. 
 
 ```sparql
 SELECT DISTINCT ?item ?itemLabel ?itemDescription ?collection ?articleFR  
@@ -42,7 +42,7 @@ SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE]" }
 ```
 <iframe style="width: 60vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#SELECT%20DISTINCT%20%3Fitem%20%3FitemLabel%20%3FitemDescription%20%3Fcollection%20%3FarticleFR%20%20%0AWHERE%20%7B%0A%20%20%3Fitem%20wdt%3AP31%2Fwdt%3AP279%2a%20wd%3AQ3305213%20%3B%20%23%20peinture%20et%20sous-classe%20de%20peinture%0A%20%20wdt%3AP195%2Fwdt%3AP361%2a%20%3Fcollection%20.%20%23%20qui%20font%20partie%20de%20mus%C3%A9es%20et%20de%20tous%20ses%20d%C3%A9partements%20si%20existant%0A%0AFILTER%20%28%20%3Fcollection%20%3D%20wd%3AQ3365279%20%29%20%23Paris%20mus%C3%A9e%0A%20%20%0A%3FarticleFR%20schema%3Aabout%20%3Fitem%20.%20%0A%3FarticleFR%20schema%3AisPartOf%20%3Chttps%3A%2F%2Ffr.wikipedia.org%2F%3E%20%23%20qui%20ont%20une%20page%20Wikipedia%20FR%0A%0ASERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%22%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%7D%0A%0A%0A" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
 
-[^1] : Paris Musées : un établissement public regroupant les musées de la Ville de Paris depuis 2013 (source : service de requête Wikidata) 
+[^1]: Paris Musées : un établissement public regroupant les musées de la Ville de Paris depuis 2013 (source : service de requête Wikidata) 
 
 ************************************************
 
