@@ -11,7 +11,7 @@ WHERE {
 
 FILTER ( ?collection = wd:Q1236032 ) #musee conde
   
-?articleFR schema:about ?item . ?articleFR schema:isPartOf <https://fr.wikipedia.org/> .# qui ont une page Wikipédia en français
+?articleFR schema:about ?item . ?articleFR schema:isPartOf <https://fr.wikipedia.org/> . # qui ont une page Wikipédia en français
 
 SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE]" }
   
@@ -29,7 +29,7 @@ WHERE {
 
 FILTER ( ?collection = wd:Q1236032 ) #musee conde
   
-?articleFR schema:about ?item . ?articleFR schema:isPartOf <https://fr.wikipedia.org/> .# qui ont une page Wikipédia en français
+?articleFR schema:about ?item . ?articleFR schema:isPartOf <https://fr.wikipedia.org/> . # qui ont une page Wikipédia en français
 
 SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE]" }
   
