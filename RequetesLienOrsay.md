@@ -14,7 +14,7 @@ SELECT DISTINCT ?item ?itemLabel ?itemDescription ?collection ?articleFR  WHERE 
 
 FILTER ( ?collection = wd:Q23402 ) #orsay
     
-?articleFR schema:about ?item . ?articleFR schema:isPartOf <https://fr.wikipedia.org/> .# qui ont une page en wikipeida FR
+?articleFR schema:about ?item . ?articleFR schema:isPartOf <https://fr.wikipedia.org/> .# qui ont une page Wikipédia en français
           
 SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE]" }
   
@@ -32,7 +32,7 @@ SELECT DISTINCT ?item ?itemLabel ?itemDescription ?collection ?articleFR  WHERE 
 
 FILTER ( ?collection = wd:Q23402 ) #orsay
     
-?articleFR schema:about ?item . ?articleFR schema:isPartOf <https://fr.wikipedia.org/> .# qui ont une page en wikipeida FR
+?articleFR schema:about ?item . ?articleFR schema:isPartOf <https://fr.wikipedia.org/> .# qui ont une page Wikipédia en français
           
 SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE]" }
   
