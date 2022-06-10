@@ -5,7 +5,7 @@
 
  > a. Le musée d'Orsay 
 
-
+La première requête va permettre d’afficher les collections d'œuvres exposées au musée d’Orsay, sous la forme d’items de type “Sculptures”, ayant leur propre page Wikipédia. Le résultat est affiché sous la forme d’une liste des œuvres. Actuellement, 32 objets possèdent une page Wikipédia. 
 
 ```sparql
 SELECT DISTINCT ?item ?itemLabel ?itemDescription ?collection ?articleFR  
@@ -25,6 +25,7 @@ SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE]" }
 
 *******************************************
 
+La seconde requête va permettre d’afficher les collections d'œuvres exposées au musée d’Orsay, sous la forme d’items de type “Peintures”, ayant leur propre page Wikipédia. Le résultat est affiché sous la forme d’une liste des œuvres. Actuellement, 213 objets possèdent une page Wikipédia. 
 
 ```sparql
 SELECT DISTINCT ?item ?itemLabel ?itemDescription ?collection ?articleFR  
@@ -48,3 +49,6 @@ SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE]" }
 
 
 [Page suivante](RequetesLienStRaymond.md) 
+
+
+[Retour à la page d'accueil](README.md)
