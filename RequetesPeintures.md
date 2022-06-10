@@ -58,7 +58,7 @@ LIMIT 20
 [Page précédente](RequetesSculptures.md) 
 
 
-[Page suivante](RequetesLien.md) 
+[Page suivante](RequetesLienOrsay.md) 
 
 
 [Retour à la page d'accueil](README.md) 
