@@ -4,17 +4,17 @@
 
   > b. Le musée Saint-Raymond (musée d'archéologie) de Toulouse
 
-La première requête va permettre d’afficher les collections d'œuvres exposées au musée Saint-Raymond, sous la forme d’items de type “Sculptures”, ayant leur propre page Wikipédia. Le résultat est affiché sous la forme d’une liste des œuvres. Actuellement, 14 objets possèdent une page Wikipédia. 
+La première requête va permettre d’afficher les collections d'œuvres exposées au musée Saint-Raymond, sous la forme d’items de type “Sculptures”, ayant leur propre page Wikipédia en français. Le résultat est affiché sous la forme d’une liste des œuvres. Actuellement, 14 objets possèdent une page Wikipédia. 
 
 ```sparql
 SELECT DISTINCT ?item ?itemLabel ?itemDescription ?collection ?articleFR  
 WHERE {
-   ?item wdt:P31/wdt:P279* wd:Q860861 ; #sculpture
-   wdt:P195/wdt:P361* ?collection . # qui font partie de musées et de tous ses départements si existant
+   ?item wdt:P31/wdt:P279* wd:Q860861 ; # Sculptures
+   wdt:P195/wdt:P361* ?collection . 
 
-FILTER ( ?collection = wd:Q1376 ) #st raymond toulouse
+FILTER ( ?collection = wd:Q1376 ) # Musée Saint-Raymond 
   
-?articleFR schema:about ?item . ?articleFR schema:isPartOf <https://fr.wikipedia.org/> .# qui ont une page Wikipédia en français
+?articleFR schema:about ?item . ?articleFR schema:isPartOf <https://fr.wikipedia.org/> .
 
 SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE]" }
   
@@ -24,17 +24,17 @@ SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE]" }
 
 ********************************************************************
 
-La seconde requête va permettre d’afficher les collections d'œuvres exposées au musée Saint-Raymond, sous la forme d’items de type “Peintures”, ayant leur propre page Wikipédia. Le résultat est affiché sous la forme d’une liste des œuvres. Actuellement, aucun objet ne dispose d’un lien Wikipédia, puisque ce musée conserve en majorité des objets de type “Sculptures”. 
+La seconde requête va permettre d’afficher les collections d'œuvres exposées au musée Saint-Raymond, sous la forme d’items de type “Peintures”, ayant leur propre page Wikipédia en français. Le résultat est affiché sous la forme d’une liste des œuvres. Actuellement, aucun objet ne dispose d’un lien Wikipédia, puisque ce musée conserve en majorité des objets de type “Sculptures”. 
 
 ```sparql
 SELECT DISTINCT ?item ?itemLabel ?itemDescription ?collection ?articleFR  
 WHERE {
-    ?item wdt:P31/wdt:P279* wd:Q3305213 ; # peinture et sous-classe de peinture
-    wdt:P195/wdt:P361* ?collection . # qui font partie de musées et de tous ses départements si existant
+    ?item wdt:P31/wdt:P279* wd:Q3305213 ; # Peintures
+    wdt:P195/wdt:P361* ?collection . 
 
-FILTER ( ?collection = wd:Q1376 ) #st raymond toulouse
+FILTER ( ?collection = wd:Q1376 ) # Musée Saint-Raymond
   
-?articleFR schema:about ?item . ?articleFR schema:isPartOf <https://fr.wikipedia.org/> .# qui ont une page Wikipédia en français
+?articleFR schema:about ?item . ?articleFR schema:isPartOf <https://fr.wikipedia.org/> .
 
 SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE]" }
   
