@@ -4,7 +4,7 @@
 
   > c. Le musée Condé de Chantilly 
 
-La première requête va permettre d’afficher les collections d'œuvres exposées au musée Condé, sous la forme d’items de type “Sculptures”, ayant leur propre page Wikipédia. Le résultat est affiché sous la forme d’une liste des œuvres.  Actuellement, aucun objet ne dispose d’un lien Wikipédia, puisque ce musée conserve en majorité des objets de type "Peintures". 
+La première requête va permettre d’afficher les collections d'œuvres exposées au musée Condé, sous la forme d’items de type “Sculptures”, ayant leur propre page Wikipédia en français. Le résultat est affiché sous la forme d’une liste des œuvres.  Actuellement, aucun objet ne dispose d’un lien Wikipédia, puisque ce musée conserve en majorité des objets de type "Peintures". 
 
 ```sparql
 SELECT DISTINCT ?item ?itemLabel ?itemDescription ?collection ?articleFR  
@@ -24,7 +24,7 @@ SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE]" }
 
 ******************************************************************
 
-La seconde requête va permettre d’afficher les collections d'œuvres exposées au musée Saint-Raymond, sous la forme d’items de type “Peintures”, ayant leur propre page Wikipédia. Le résultat est affiché sous la forme d’une liste des œuvres.  Actuellement, 29 objets de type “Peintures” disposent chacun un lien Wikipédia. 
+La seconde requête va permettre d’afficher les collections d'œuvres exposées au musée Saint-Raymond, sous la forme d’items de type “Peintures”, ayant leur propre page Wikipédia en français. Le résultat est affiché sous la forme d’une liste des œuvres.  Actuellement, 29 objets de type “Peintures” disposent chacun un lien Wikipédia, écrit en langue française. 
 
 ```sparql
 SELECT DISTINCT ?item ?itemLabel ?itemDescription ?collection ?articleFR  
