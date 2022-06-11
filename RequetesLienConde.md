@@ -1,5 +1,7 @@
 # Projet de fin d'études 
 
+> 3) Les requêtes concernant les items possédant une page Wikipédia  
+
   > c. Le musée Condé de Chantilly 
 
 La première requête va permettre d’afficher les collections d'œuvres exposées au musée Condé, sous la forme d’items de type “Sculptures”, ayant leur propre page Wikipédia. Le résultat est affiché sous la forme d’une liste des œuvres.  Actuellement, aucun objet ne dispose d’un lien Wikipédia, puisque ce musée conserve en majorité des objets de type "Peintures". 
