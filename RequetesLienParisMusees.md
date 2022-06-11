@@ -9,10 +9,10 @@ La première requête va permettre d’afficher les collections d'œuvres expos�
 ```sparql
 SELECT DISTINCT ?item ?itemLabel ?itemDescription ?collection ?articleFR  
 WHERE {
-  ?item wdt:P31/wdt:P279* wd:Q860861 ; 
+  ?item wdt:P31/wdt:P279* wd:Q860861 ; # Sculptures
   wdt:P195/wdt:P361* ?collection . 
 
-FILTER ( ?collection = wd:Q3365279 ) 
+FILTER ( ?collection = wd:Q3365279 ) # Paris Musées
   
 ?articleFR schema:about ?item . 
 ?articleFR schema:isPartOf <https://fr.wikipedia.org/> .
@@ -30,10 +30,10 @@ La seconde requête va permettre d’afficher les collections d'œuvres exposée
 ```sparql
 SELECT DISTINCT ?item ?itemLabel ?itemDescription ?collection ?articleFR  
 WHERE {
-  ?item wdt:P31/wdt:P279* wd:Q3305213 ; 
+  ?item wdt:P31/wdt:P279* wd:Q3305213 ; # Peintures 
   wdt:P195/wdt:P361* ?collection . 
 
-FILTER ( ?collection = wd:Q3365279 ) 
+FILTER ( ?collection = wd:Q3365279 ) # Paris Musées 
   
 ?articleFR schema:about ?item . 
 ?articleFR schema:isPartOf <https://fr.wikipedia.org/> .
