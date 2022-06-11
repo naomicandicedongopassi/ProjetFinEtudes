@@ -1,5 +1,7 @@
 # Projet de fin d'études 
 
+> 3) Les requêtes concernant les items possédant une page Wikipédia  
+
   > d. Paris Musées
 
 La première requête va permettre d’afficher les collections d'œuvres exposées par Paris Musées[^1], sous la forme d’items de type “Sculptures”, ayant leur propre page Wikipédia. Le résultat est affiché sous la forme d’une liste des œuvres. Actuellement, 19 objets disposent d’un lien Wikipédia. 
