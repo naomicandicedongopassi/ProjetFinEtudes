@@ -15,7 +15,7 @@ WHERE {
 FILTER ( ?collection = wd:Q3365279 ) 
   
 ?articleFR schema:about ?item . 
-?articleFR schema:isPartOf <https://fr.wikipedia.org/> 
+?articleFR schema:isPartOf <https://fr.wikipedia.org/> .
 
 SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE]" }
                                                        
@@ -36,7 +36,7 @@ WHERE {
 FILTER ( ?collection = wd:Q3365279 ) 
   
 ?articleFR schema:about ?item . 
-?articleFR schema:isPartOf <https://fr.wikipedia.org/> 
+?articleFR schema:isPartOf <https://fr.wikipedia.org/> .
 
 SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE]" }
                                                        
