@@ -1,5 +1,7 @@
 # Projet de fin d'études 
 
+> 3) Les requêtes concernant les items possédant une page Wikipédia  
+
   > b. Le musée Saint-Raymond (musée d'archéologie) de Toulouse
 
 La première requête va permettre d’afficher les collections d'œuvres exposées au musée Saint-Raymond, sous la forme d’items de type “Sculptures”, ayant leur propre page Wikipédia. Le résultat est affiché sous la forme d’une liste des œuvres. Actuellement, 14 objets possèdent une page Wikipédia. 
