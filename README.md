@@ -2,7 +2,7 @@
 
 
 
-<a id='dfSSOOGMSX9Hz046aZn4QA' class='gie-slideshow' href='http://www.gettyimages.com/detail/1345281359' target='_blank' style='color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;'>Embed from Getty Images</a><script>window.gie=window.gie||function(c){(gie.q=gie.q||[]).push(c)};gie(function(){gie.widgets.load({id:'dfSSOOGMSX9Hz046aZn4QA',sig:'hRuB40Ootpg8Ul9McEKxMhLE9jTl08TNkJlUx_USU9M=',w:'464px',h:'371px',items:'1345281359,1284880791,1130481171,671803286,120385679',caption: true ,tld:'com',is360: false })});</script><script src='//embed-cdn.gettyimages.com/widgets.js' charset='utf-8' async></script>
+<a id='8n_7elFXRZ1b0olOvYvM7g' class='gie-slideshow' href='http://www.gettyimages.com/detail/1284880791' target='_blank' style='color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;'>Embed from Getty Images</a><script>window.gie=window.gie||function(c){(gie.q=gie.q||[]).push(c)};gie(function(){gie.widgets.load({id:'8n_7elFXRZ1b0olOvYvM7g',sig:'YhlKayk0v7U_g2s2UcwH3ebs52ya0U0WVf5aGsj58o0=',w:'479px',h:'359px',items:'1284880791,1345281359,671803286,1130481171,120385679',caption: true ,tld:'com',is360: false })});</script><script src='//embed-cdn.gettyimages.com/widgets.js' charset='utf-8' async></script>
 
 
 1) [Les requêtes concernant le nombre d’items partagés par les musées français de type “Sculptures” sur Wikidata](RequetesSculptures.md)
