@@ -2,7 +2,7 @@
 
 > 3) Les requêtes concernant les items possédant une page Wikipédia  
 
-  > c. Le musée Condé de Chantilly 
+  > c. Le musée Condé (Château de Chantilly)
 
 La première requête va permettre d’afficher les collections d'œuvres exposées au musée Condé, sous la forme d’items de type “Sculptures”, ayant leur propre page Wikipédia en français. Le résultat est affiché sous la forme d’une liste des œuvres.  Actuellement, aucun objet ne dispose d’un lien Wikipédia, puisque ce musée conserve en majorité des objets de type "Peintures". 
 
@@ -12,7 +12,7 @@ WHERE {
    ?item wdt:P31/wdt:P279* wd:Q860861 ; # Sculptures
    wdt:P195/wdt:P361* ?collection . 
 
-FILTER ( ?collection = wd:Q1236032 ) # Musée Condé 
+FILTER ( ?collection = wd:Q1236032 ) # Musée Condé (Château de Chantilly)
   
 ?articleFR schema:about ?item . ?articleFR schema:isPartOf <https://fr.wikipedia.org/> . 
 
@@ -32,7 +32,7 @@ WHERE {
     ?item wdt:P31/wdt:P279* wd:Q3305213 ; # Peintures
     wdt:P195/wdt:P361* ?collection . 
 
-FILTER ( ?collection = wd:Q1236032 ) # Musée Condé
+FILTER ( ?collection = wd:Q1236032 ) # Musée Condé (Château de Chantilly)
   
 ?articleFR schema:about ?item . ?articleFR schema:isPartOf <https://fr.wikipedia.org/> . 
 
