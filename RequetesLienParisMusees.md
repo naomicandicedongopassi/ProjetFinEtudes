@@ -25,7 +25,7 @@ SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE]" }
 
 **************************************************
 
-La seconde requête va permettre d’afficher les collections d'œuvres exposées par Paris Musées, sous la forme d’items de type “Peintures”, ayant leur propre page Wikipédia. Le résultat est affiché sous la forme d’une liste des œuvres. Actuellement, 19 objets disposent d’un lien Wikipédia. 
+La seconde requête va permettre d’afficher les collections d'œuvres exposées par Paris Musées, sous la forme d’items de type “Peintures”, ayant leur propre page Wikipédia. Le résultat est affiché sous la forme d’une liste des œuvres. Actuellement, 47 objets disposent d’un lien Wikipédia. 
 
 ```sparql
 SELECT DISTINCT ?item ?itemLabel ?itemDescription ?collection ?articleFR  
