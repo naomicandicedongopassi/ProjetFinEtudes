@@ -9,13 +9,13 @@ La première requête va permettre d’afficher les collections d'œuvres expos�
 ```sparql
 SELECT DISTINCT ?item ?itemLabel ?itemDescription ?collection ?articleFR  
 WHERE {
-  ?item wdt:P31/wdt:P279* wd:Q860861 ; #sculpture et sous-classe de sculptures
-  wdt:P195/wdt:P361* ?collection . # qui font partie de musées et de tous ses départements si existant
+  ?item wdt:P31/wdt:P279* wd:Q860861 ; 
+  wdt:P195/wdt:P361* ?collection . 
 
-FILTER ( ?collection = wd:Q3365279 ) #Paris musée
+FILTER ( ?collection = wd:Q3365279 ) 
   
 ?articleFR schema:about ?item . 
-?articleFR schema:isPartOf <https://fr.wikipedia.org/> # qui ont une page Wikipédia en français
+?articleFR schema:isPartOf <https://fr.wikipedia.org/> 
 
 SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE]" }
                                                        
@@ -30,13 +30,13 @@ La seconde requête va permettre d’afficher les collections d'œuvres exposée
 ```sparql
 SELECT DISTINCT ?item ?itemLabel ?itemDescription ?collection ?articleFR  
 WHERE {
-  ?item wdt:P31/wdt:P279* wd:Q3305213 ; # peinture et sous-classe de peinture
-  wdt:P195/wdt:P361* ?collection . # qui font partie de musées et de tous ses départements si existant
+  ?item wdt:P31/wdt:P279* wd:Q3305213 ; 
+  wdt:P195/wdt:P361* ?collection . 
 
-FILTER ( ?collection = wd:Q3365279 ) #Paris musée
+FILTER ( ?collection = wd:Q3365279 ) 
   
 ?articleFR schema:about ?item . 
-?articleFR schema:isPartOf <https://fr.wikipedia.org/> # qui ont une page Wikipédia en français
+?articleFR schema:isPartOf <https://fr.wikipedia.org/> 
 
 SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE]" }
                                                        
